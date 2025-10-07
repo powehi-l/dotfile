@@ -8,7 +8,9 @@
     ~/.zshrc: zshrc
     ~/.zsh: zsh
     ~/.shell: shell
-    ~/.config/nvim/init.lua: config/nvim/init.lua
+    ~/.config/nvim/init.lua: 
+      create: true
+      path: config/nvim/init.lua
     ~/.config/nvim/lua: config/nvim/lua
     ~/.tmux.conf: tmux/tmux.conf
     ~/.config/mihomo/config.yaml: config/mihomo/config.yaml
