@@ -1,3 +1,4 @@
 [submodule "dotbot"]
 	path = dotbot
 	url = https://gitee.com/deandraco/dotbot
+	ignore = dirty
