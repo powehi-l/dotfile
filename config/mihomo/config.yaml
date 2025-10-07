@@ -3,76 +3,80 @@ socks-port: 29998
 allow-lan: true
 mode: Rule
 log-level: info
-# external-controller: :9090
+# external-controller: :9988
+#  external-ui: ui
+# external-ui-url: 'https://mirror.ghproxy.com/https://github.com/Zephyruso/zashboard/releases/latest/download/dist.zip'
+# secret: "secret"
+
 proxies:
   - {name: 用户3200102126@zju.edu.cn, server: github.com, port: 443, type: ss, cipher: aes-128-gcm, password: 6601fb90e9b3, udp: true}
-  - {name: UnitedStates-Florida, server: e72f328.okxyz.xyz, port: 443, type: vless, uuid: 7b8d8401-1607-31cd-945b-f45146b69337, tls: true, tfo: false, flow: xtls-rprx-vision, servername: e72f328.okxyz.xyz, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: TheNetherlands-Flevoland_DX580Mbps, server: 5d9a678.oktizi.xyz, port: 443, type: vless, uuid: 7b8d8401-1607-31cd-945b-f45146b69337, tls: true, tfo: false, servername: 5d9a678.oktizi.xyz, network: grpc, grpc-opts: {grpc-mode: gun, grpc-service-name: ssp}, udp: true}
-  - {name: UnitedKingdom-England_YD313Mbps, server: 7ec3643.oktizi.xyz, port: 443, type: vless, uuid: 7b8d8401-1607-31cd-945b-f45146b69337, tls: true, tfo: false, servername: 7ec3643.oktizi.xyz, network: grpc, grpc-opts: {grpc-mode: gun, grpc-service-name: ssp}, udp: true}
+  - {name: Philippines-MetroManila_DX226Mbps, server: ec3b300.ayxj.top, port: 443, type: vless, uuid: 7b8d8401-1607-31cd-945b-f45146b69337, tls: true, tfo: false, flow: xtls-rprx-vision, servername: ec3b300.ayxj.top, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: HongKong-Kowloon, server: 104.25.60.170, port: 443, type: vless, uuid: 7b8d8401-1607-31cd-945b-f45146b69337, tls: true, tfo: false, servername: a835199.ayxj.top, network: ws, ws-opts: {path: /6b8f7f5e, headers: {Host: a835199.ayxj.top}}, udp: true}
+  - {name: Romania-București_DX72Mbps, server: b125312.okxyzback.xyz, port: 443, type: vless, uuid: 7b8d8401-1607-31cd-945b-f45146b69337, tls: true, tfo: false, servername: b125312.okxyzback.xyz, network: grpc, grpc-opts: {grpc-mode: gun, grpc-service-name: a76b0a4c}, udp: true}
   - {name: TheNetherlands-NorthHolland, server: e538734.okxyznode.top, port: 443, type: vless, uuid: 7b8d8401-1607-31cd-945b-f45146b69337, tls: true, tfo: false, servername: e538734.okxyznode.top, network: grpc, grpc-opts: {grpc-mode: gun, grpc-service-name: ssp}, udp: true}
-  - {name: UnitedStates-Virginia, server: 8fe5237.okxyznode.top, port: 443, type: vless, uuid: 7b8d8401-1607-31cd-945b-f45146b69337, tls: true, tfo: false, servername: 8fe5237.okxyznode.top, network: grpc, grpc-opts: {grpc-mode: gun, grpc-service-name: ssp}, udp: true}
+  - {name: TheNetherlands-Flevoland_LT541Mbps, server: 91e8679.oktizi.xyz, port: 443, type: vless, uuid: 7b8d8401-1607-31cd-945b-f45146b69337, tls: true, tfo: false, servername: 91e8679.oktizi.xyz, network: grpc, grpc-opts: {grpc-mode: gun, grpc-service-name: f18cb28f}, udp: true}
+  - {name: UnitedKingdom-England_YD313Mbps, server: 7ec3643.oktizi.xyz, port: 443, type: vless, uuid: 7b8d8401-1607-31cd-945b-f45146b69337, tls: true, tfo: false, servername: 7ec3643.oktizi.xyz, network: grpc, grpc-opts: {grpc-mode: gun, grpc-service-name: ssp}, udp: true}
   - {name: Germany-Hesse, server: ipv6f17e522.okxyznode.top, port: 443, type: vless, uuid: 7b8d8401-1607-31cd-945b-f45146b69337, tls: true, tfo: false, servername: ipv6f17e522.okxyznode.top, network: grpc, grpc-opts: {grpc-mode: gun, grpc-service-name: ssp}, udp: true}
+  - {name: UnitedStates-Virginia_YD779Mbps, server: 88e8706.okxyznode.top, port: 443, type: vless, uuid: 7b8d8401-1607-31cd-945b-f45146b69337, tls: true, tfo: false, servername: 88e8706.okxyznode.top, network: grpc, grpc-opts: {grpc-mode: gun, grpc-service-name: ssp}, udp: true}
+  - {name: UnitedStates-Illinois_DX83Mbps, server: cf57570.okxyz.xyz, port: 443, type: vless, uuid: 7b8d8401-1607-31cd-945b-f45146b69337, tls: true, tfo: false, flow: xtls-rprx-vision, servername: cf57570.okxyz.xyz, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: UnitedStates-Illinois_LT221Mbps, server: 56dc721.okxyz.xyz, port: 443, type: vless, uuid: 7b8d8401-1607-31cd-945b-f45146b69337, tls: true, tfo: false, flow: xtls-rprx-vision, servername: 56dc721.okxyz.xyz, client-fingerprint: chrome, network: tcp, udp: true}
   - {name: TheNetherlands-Flevoland, server: ipv698ce598.okxyz.xyz, port: 443, type: vless, uuid: 7b8d8401-1607-31cd-945b-f45146b69337, tls: true, tfo: false, servername: ipv698ce598.okxyz.xyz, network: grpc, grpc-opts: {grpc-mode: gun, grpc-service-name: ssp}, udp: true}
+  - {name: Romania-București_YD77Mbps, server: 11a9676.okxyzback.xyz, port: 443, type: vless, uuid: 7b8d8401-1607-31cd-945b-f45146b69337, tls: true, tfo: false, servername: 11a9676.okxyzback.xyz, network: grpc, grpc-opts: {grpc-mode: gun, grpc-service-name: a76b0a4c}, udp: true}
   - {name: Estonia-Harjumaa, server: f74e481.oktizi.xyz, port: 443, type: vless, uuid: 7b8d8401-1607-31cd-945b-f45146b69337, tls: true, tfo: false, flow: xtls-rprx-vision, servername: f74e481.oktizi.xyz, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: Indonesia-Jakarta, server: 85cf819.ayxj.top, port: 443, type: vless, uuid: 7b8d8401-1607-31cd-945b-f45146b69337, tls: true, tfo: false, flow: xtls-rprx-vision, servername: 85cf819.ayxj.top, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: Japan-Tokyo_DX212Mbps, server: 39b4320.ayxj.top, port: 443, type: vless, uuid: 7b8d8401-1607-31cd-945b-f45146b69337, tls: true, tfo: false, flow: xtls-rprx-vision, servername: 39b4320.ayxj.top, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: Singapore-NorthWest, server: b928785.ayxj.top, port: 443, type: vless, uuid: 7b8d8401-1607-31cd-945b-f45146b69337, tls: true, tfo: false, flow: xtls-rprx-vision, servername: b928785.ayxj.top, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: 1G_UnitedStates-NewYork, server: ad20844.okxyzback.xyz, port: 443, type: vless, uuid: 7b8d8401-1607-31cd-945b-f45146b69337, tls: true, tfo: false, servername: ad20844.okxyzback.xyz, network: grpc, grpc-opts: {grpc-mode: gun, grpc-service-name: ssp}, udp: true}
   - {name: TheNetherlands-NorthHolland 2, server: 82af708.okxyznode.top, port: 443, type: vless, uuid: 7b8d8401-1607-31cd-945b-f45146b69337, tls: true, tfo: false, servername: 82af708.okxyznode.top, network: grpc, grpc-opts: {grpc-mode: gun, grpc-service-name: ssp}, udp: true}
-  - {name: UnitedStates-Illinois_YD442Mbps, server: 129c720.okxyz.xyz, port: 443, type: vless, uuid: 7b8d8401-1607-31cd-945b-f45146b69337, tls: true, tfo: false, flow: xtls-rprx-vision, servername: 129c720.okxyz.xyz, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: TheNetherlands-Flevoland_DX580Mbps, server: 9643678.oktizi.xyz, port: 443, type: vless, uuid: 7b8d8401-1607-31cd-945b-f45146b69337, tls: true, tfo: false, servername: 9643678.oktizi.xyz, network: grpc, grpc-opts: {grpc-mode: gun, grpc-service-name: f18cb28f}, udp: true}
+  - {name: UnitedStates-Virginia, server: 45f2120.okxyznode.top, port: 443, type: vless, uuid: 7b8d8401-1607-31cd-945b-f45146b69337, tls: true, tfo: false, servername: 45f2120.okxyznode.top, network: grpc, grpc-opts: {grpc-mode: gun, grpc-service-name: ssp}, udp: true}
   - {name: TheNetherlands-Flevoland_YD779Mbps, server: becc224.okxyz.xyz, port: 443, type: vless, uuid: 7b8d8401-1607-31cd-945b-f45146b69337, tls: true, tfo: false, servername: becc224.okxyz.xyz, network: grpc, grpc-opts: {grpc-mode: gun, grpc-service-name: ssp}, udp: true}
+  - {name: Malaysia-KualaLumpur_YD231Mbps, server: c7c3366.ayxj.top, port: 443, type: vless, uuid: 7b8d8401-1607-31cd-945b-f45146b69337, tls: true, tfo: false, flow: xtls-rprx-vision, servername: c7c3366.ayxj.top, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: Malaysia-KualaLumpur_DX236Mbps, server: 5ccb463.ayxj.top, port: 443, type: vless, uuid: 7b8d8401-1607-31cd-945b-f45146b69337, tls: true, tfo: false, flow: xtls-rprx-vision, servername: 5ccb463.ayxj.top, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: Singapore-NorthWest_YD214Mbps, server: c244616.ayxj.top, port: 443, type: vless, uuid: 7b8d8401-1607-31cd-945b-f45146b69337, tls: true, tfo: false, flow: xtls-rprx-vision, servername: c244616.ayxj.top, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: UnitedStates-Florida_DX132Mbps, server: 7bd5428.okxyz.xyz, port: 443, type: vless, uuid: 7b8d8401-1607-31cd-945b-f45146b69337, tls: true, tfo: false, flow: xtls-rprx-vision, servername: 7bd5428.okxyz.xyz, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: Romania-București, server: ipv6d9bb253.okxyzback.xyz, port: 443, type: vless, uuid: 7b8d8401-1607-31cd-945b-f45146b69337, tls: true, tfo: false, servername: ipv6d9bb253.okxyzback.xyz, network: grpc, grpc-opts: {grpc-mode: gun, grpc-service-name: a76b0a4c}, udp: true}
   - {name: Estonia-Harjumaa_DX1002Mbps, server: 9511348.oktizi.xyz, port: 443, type: vless, uuid: 7b8d8401-1607-31cd-945b-f45146b69337, tls: true, tfo: false, flow: xtls-rprx-vision, servername: 9511348.oktizi.xyz, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: Thailand-Bangkok, server: 96bf277.ayxj.top, port: 443, type: vless, uuid: 7b8d8401-1607-31cd-945b-f45146b69337, tls: true, tfo: false, flow: xtls-rprx-vision, servername: 96bf277.ayxj.top, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: UnitedStates-Florida_DX132Mbps, server: 5d8c428.okxyz.xyz, port: 443, type: vless, uuid: 7b8d8401-1607-31cd-945b-f45146b69337, tls: true, tfo: false, flow: xtls-rprx-vision, servername: 5d8c428.okxyz.xyz, client-fingerprint: chrome, network: tcp, udp: true}
   - {name: UnitedKingdom-England_DX47Mbps, server: 1582732.oktizi.xyz, port: 443, type: vless, uuid: 7b8d8401-1607-31cd-945b-f45146b69337, tls: true, tfo: false, servername: 1582732.oktizi.xyz, network: grpc, grpc-opts: {grpc-mode: gun, grpc-service-name: ssp}, udp: true}
   - {name: UnitedKingdom-England, server: ipv64921221.oktizi.xyz, port: 443, type: vless, uuid: 7b8d8401-1607-31cd-945b-f45146b69337, tls: true, tfo: false, servername: ipv64921221.oktizi.xyz, network: grpc, grpc-opts: {grpc-mode: gun, grpc-service-name: ssp}, udp: true}
-  - {name: Indonesia-Jakarta_YD156Mbps, server: a7e5456.ayxj.top, port: 443, type: vless, uuid: 7b8d8401-1607-31cd-945b-f45146b69337, tls: true, tfo: false, flow: xtls-rprx-vision, servername: a7e5456.ayxj.top, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: Thailand-Bangkok_YD63Mbps, server: 4d52826.ayxj.top, port: 443, type: vless, uuid: 7b8d8401-1607-31cd-945b-f45146b69337, tls: true, tfo: false, flow: xtls-rprx-vision, servername: 4d52826.ayxj.top, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: 1Gbps-10TB_UnitedStates-NewYork, server: 734c846.okxyzback.xyz, port: 443, type: vless, uuid: 7b8d8401-1607-31cd-945b-f45146b69337, tls: true, tfo: false, servername: 734c846.okxyzback.xyz, network: grpc, grpc-opts: {grpc-mode: gun, grpc-service-name: ssp}, udp: true}
-  - {name: 1G_UnitedStates-NewYork 2, server: 88fa843.okxyzback.xyz, port: 443, type: vless, uuid: 7b8d8401-1607-31cd-945b-f45146b69337, tls: true, tfo: false, servername: 88fa843.okxyzback.xyz, network: grpc, grpc-opts: {grpc-mode: gun, grpc-service-name: ssp}, udp: true}
+  - {name: UnitedStates-Illinois_YD442Mbps, server: cb31720.okxyz.xyz, port: 443, type: vless, uuid: 7b8d8401-1607-31cd-945b-f45146b69337, tls: true, tfo: false, flow: xtls-rprx-vision, servername: cb31720.okxyz.xyz, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: Malaysia-KualaLumpur_LT132Mbps, server: f23c499.ayxj.top, port: 443, type: vless, uuid: 7b8d8401-1607-31cd-945b-f45146b69337, tls: true, tfo: false, flow: xtls-rprx-vision, servername: f23c499.ayxj.top, client-fingerprint: chrome, network: tcp, udp: true}
   - {name: UnitedKingdom-England 2, server: ipv6987d235.oktizi.xyz, port: 443, type: vless, uuid: 7b8d8401-1607-31cd-945b-f45146b69337, tls: true, tfo: false, servername: ipv6987d235.oktizi.xyz, network: grpc, grpc-opts: {grpc-mode: gun, grpc-service-name: ssp}, udp: true}
-  - {name: UnitedStates-Virginia 2, server: 4ad2120.okxyznode.top, port: 443, type: vless, uuid: 7b8d8401-1607-31cd-945b-f45146b69337, tls: true, tfo: false, servername: 4ad2120.okxyznode.top, network: grpc, grpc-opts: {grpc-mode: gun, grpc-service-name: ssp}, udp: true}
-  - {name: UnitedStates-Illinois_LT221Mbps, server: 28e2721.okxyz.xyz, port: 443, type: vless, uuid: 7b8d8401-1607-31cd-945b-f45146b69337, tls: true, tfo: false, flow: xtls-rprx-vision, servername: 28e2721.okxyz.xyz, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: UnitedStates-Virginia_LT1038Mbps, server: 97e7705.okxyznode.top, port: 443, type: vless, uuid: 7b8d8401-1607-31cd-945b-f45146b69337, tls: true, tfo: false, servername: 97e7705.okxyznode.top, network: grpc, grpc-opts: {grpc-mode: gun, grpc-service-name: ssp}, udp: true}
+  - {name: 1Gbps-10TB_UnitedStates-NewYork, server: 734c846.okxyzback.xyz, port: 443, type: vless, uuid: 7b8d8401-1607-31cd-945b-f45146b69337, tls: true, tfo: false, servername: 734c846.okxyzback.xyz, network: grpc, grpc-opts: {grpc-mode: gun, grpc-service-name: ssp}, udp: true}
   - {name: TheNetherlands-Flevoland_DX653Mbps, server: fa90211.okxyz.xyz, port: 443, type: vless, uuid: 7b8d8401-1607-31cd-945b-f45146b69337, tls: true, tfo: false, servername: fa90211.okxyz.xyz, network: grpc, grpc-opts: {grpc-mode: gun, grpc-service-name: ssp}, udp: true}
-  - {name: Philippines-MetroManila_DX214Mbps, server: 30c2822.ayxj.top, port: 443, type: vless, uuid: 7b8d8401-1607-31cd-945b-f45146b69337, tls: true, tfo: false, flow: xtls-rprx-vision, servername: 30c2822.ayxj.top, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: Japan-Tokyo, server: 1930824.ayxj.top, port: 443, type: vless, uuid: 7b8d8401-1607-31cd-945b-f45146b69337, tls: true, tfo: false, flow: xtls-rprx-vision, servername: 1930824.ayxj.top, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: UnitedStates-Florida 2, server: ipv62239329.okxyz.xyz, port: 443, type: vless, uuid: 7b8d8401-1607-31cd-945b-f45146b69337, tls: true, tfo: false, flow: xtls-rprx-vision, servername: ipv62239329.okxyz.xyz, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: 电信193M_Romania-București, server: ipv6dc78257.oktizi.xyz, port: 443, type: vless, uuid: 7b8d8401-1607-31cd-945b-f45146b69337, tls: true, tfo: false, servername: ipv6dc78257.oktizi.xyz, network: grpc, grpc-opts: {grpc-mode: gun, grpc-service-name: ssp}, udp: true}
-  - {name: 1G_UnitedStates-NewYork 3, server: 1a43246.okxyzback.xyz, port: 443, type: vless, uuid: 7b8d8401-1607-31cd-945b-f45146b69337, tls: true, tfo: false, servername: 1a43246.okxyzback.xyz, network: grpc, grpc-opts: {grpc-mode: gun, grpc-service-name: ssp}, udp: true}
-  - {name: TheNetherlands-Flevoland_LT541Mbps, server: 204c679.oktizi.xyz, port: 443, type: vless, uuid: 7b8d8401-1607-31cd-945b-f45146b69337, tls: true, tfo: false, servername: 204c679.oktizi.xyz, network: grpc, grpc-opts: {grpc-mode: gun, grpc-service-name: ssp}, udp: true}
+  - {name: HongKong-Kowloon 2, server: 104.20.8.183, port: 443, type: vless, uuid: 7b8d8401-1607-31cd-945b-f45146b69337, tls: true, tfo: false, servername: 8c72409.ayxj.top, network: ws, ws-opts: {path: /6b8f7f5e, headers: {Host: 8c72409.ayxj.top}}, udp: true}
+  - {name: Japan-Tokyo_YD200Mbps, server: e4c9465.ayxj.top, port: 443, type: vless, uuid: 7b8d8401-1607-31cd-945b-f45146b69337, tls: true, tfo: false, flow: xtls-rprx-vision, servername: e4c9465.ayxj.top, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: UnitedStates-Florida, server: ipv6d1b1331.okxyz.xyz, port: 443, type: vless, uuid: 7b8d8401-1607-31cd-945b-f45146b69337, tls: true, tfo: false, flow: xtls-rprx-vision, servername: ipv6d1b1331.okxyz.xyz, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: Germany-Hesse_YD570Mbps, server: a121862.okxyznode.top, port: 443, type: vless, uuid: 7b8d8401-1607-31cd-945b-f45146b69337, tls: true, tfo: false, servername: a121862.okxyznode.top, network: grpc, grpc-opts: {grpc-mode: gun, grpc-service-name: ssp}, udp: true}
   - {name: UnitedStates-Illinois_YD454Mbps, server: cea9393.okxyzback.xyz, port: 443, type: vless, uuid: 7b8d8401-1607-31cd-945b-f45146b69337, tls: true, tfo: false, servername: cea9393.okxyzback.xyz, network: grpc, grpc-opts: {grpc-mode: gun, grpc-service-name: ssp}, udp: true}
   - {name: UnitedStates-Illinois_LT419Mbps, server: fa3c394.okxyzback.xyz, port: 443, type: vless, uuid: 7b8d8401-1607-31cd-945b-f45146b69337, tls: true, tfo: false, servername: fa3c394.okxyzback.xyz, network: grpc, grpc-opts: {grpc-mode: gun, grpc-service-name: ssp}, udp: true}
-  - {name: Germany-Hesse_YD570Mbps, server: a121862.okxyznode.top, port: 443, type: vless, uuid: 7b8d8401-1607-31cd-945b-f45146b69337, tls: true, tfo: false, servername: a121862.okxyznode.top, network: grpc, grpc-opts: {grpc-mode: gun, grpc-service-name: ssp}, udp: true}
+  - {name: UnitedStates-Virginia 2, server: 2121237.okxyznode.top, port: 443, type: vless, uuid: 7b8d8401-1607-31cd-945b-f45146b69337, tls: true, tfo: false, servername: 2121237.okxyznode.top, network: grpc, grpc-opts: {grpc-mode: gun, grpc-service-name: ssp}, udp: true}
   - {name: TheNetherlands-Flevoland_LT552Mbps, server: 7c51636.okxyz.xyz, port: 443, type: vless, uuid: 7b8d8401-1607-31cd-945b-f45146b69337, tls: true, tfo: false, servername: 7c51636.okxyz.xyz, network: grpc, grpc-opts: {grpc-mode: gun, grpc-service-name: ssp}, udp: true}
   - {name: TheNetherlands-Flevoland 2, server: ipv6bf3a496.okxyz.xyz, port: 443, type: vless, uuid: 7b8d8401-1607-31cd-945b-f45146b69337, tls: true, tfo: false, servername: ipv6bf3a496.okxyz.xyz, network: grpc, grpc-opts: {grpc-mode: gun, grpc-service-name: ssp}, udp: true}
+  - {name: UnitedStates-NewYork_LT444Mbps, server: 4594246.oktizi.xyz, port: 443, type: vless, uuid: 7b8d8401-1607-31cd-945b-f45146b69337, tls: true, tfo: false, servername: 4594246.oktizi.xyz, network: grpc, grpc-opts: {grpc-mode: gun, grpc-service-name: cad15a14}, udp: true}
+  - {name: Indonesia-Jakarta, server: dc6a589.ayxj.top, port: 443, type: vless, uuid: 7b8d8401-1607-31cd-945b-f45146b69337, tls: true, tfo: false, flow: xtls-rprx-vision, servername: dc6a589.ayxj.top, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: Indonesia-Jakarta_LT183Mbps, server: 2305405.ayxj.top, port: 443, type: vless, uuid: 7b8d8401-1607-31cd-945b-f45146b69337, tls: true, tfo: false, flow: xtls-rprx-vision, servername: 2305405.ayxj.top, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: Thailand-Bangkok, server: eeff591.ayxj.top, port: 443, type: vless, uuid: 7b8d8401-1607-31cd-945b-f45146b69337, tls: true, tfo: false, flow: xtls-rprx-vision, servername: eeff591.ayxj.top, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: Malaysia-KualaLumpur, server: a820358.ayxj.top, port: 443, type: vless, uuid: 7b8d8401-1607-31cd-945b-f45146b69337, tls: true, tfo: false, flow: xtls-rprx-vision, servername: a820358.ayxj.top, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: Philippines-MetroManila, server: 3f5c466.ayxj.top, port: 443, type: vless, uuid: 7b8d8401-1607-31cd-945b-f45146b69337, tls: true, tfo: false, flow: xtls-rprx-vision, servername: 3f5c466.ayxj.top, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: HongKong-Kowloon 3, server: 104.25.245.137, port: 443, type: vless, uuid: 7b8d8401-1607-31cd-945b-f45146b69337, tls: true, tfo: false, servername: a687434.ayxj.top, network: ws, ws-opts: {path: /6b8f7f5e, headers: {Host: a687434.ayxj.top}}, udp: true}
+  - {name: Japan-Tokyo, server: 548d590.ayxj.top, port: 443, type: vless, uuid: 7b8d8401-1607-31cd-945b-f45146b69337, tls: true, tfo: false, flow: xtls-rprx-vision, servername: 548d590.ayxj.top, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: Singapore-NorthWest, server: c9cc608.ayxj.top, port: 443, type: vless, uuid: 7b8d8401-1607-31cd-945b-f45146b69337, tls: true, tfo: false, flow: xtls-rprx-vision, servername: c9cc608.ayxj.top, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: Singapore-NorthWest_LT214Mbps, server: 1cf1617.ayxj.top, port: 443, type: vless, uuid: 7b8d8401-1607-31cd-945b-f45146b69337, tls: true, tfo: false, flow: xtls-rprx-vision, servername: 1cf1617.ayxj.top, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: UnitedStates-Florida 2, server: 6372328.okxyz.xyz, port: 443, type: vless, uuid: 7b8d8401-1607-31cd-945b-f45146b69337, tls: true, tfo: false, flow: xtls-rprx-vision, servername: 6372328.okxyz.xyz, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: UnitedStates-Florida 3, server: 8edb225.okxyz.xyz, port: 443, type: vless, uuid: 7b8d8401-1607-31cd-945b-f45146b69337, tls: true, tfo: false, flow: xtls-rprx-vision, servername: 8edb225.okxyz.xyz, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: Romania-București 2, server: d0dd673.okxyzback.xyz, port: 443, type: vless, uuid: 7b8d8401-1607-31cd-945b-f45146b69337, tls: true, tfo: false, servername: d0dd673.okxyzback.xyz, network: grpc, grpc-opts: {grpc-mode: gun, grpc-service-name: a76b0a4c}, udp: true}
   - {name: Estonia-Harjumaa_LT76Mbps, server: 293e473.oktizi.xyz, port: 443, type: vless, uuid: 7b8d8401-1607-31cd-945b-f45146b69337, tls: true, tfo: false, flow: xtls-rprx-vision, servername: 293e473.oktizi.xyz, client-fingerprint: chrome, network: tcp, udp: true}
   - {name: Estonia-Harjumaa 2, server: acc0501.oktizi.xyz, port: 443, type: vless, uuid: 7b8d8401-1607-31cd-945b-f45146b69337, tls: true, tfo: false, flow: xtls-rprx-vision, servername: acc0501.oktizi.xyz, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: Indonesia-Jakarta 2, server: 2047835.ayxj.top, port: 443, type: vless, uuid: 7b8d8401-1607-31cd-945b-f45146b69337, tls: true, tfo: false, flow: xtls-rprx-vision, servername: 2047835.ayxj.top, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: Thailand-Bangkok 2, server: 19dc823.ayxj.top, port: 443, type: vless, uuid: 7b8d8401-1607-31cd-945b-f45146b69337, tls: true, tfo: false, flow: xtls-rprx-vision, servername: 19dc823.ayxj.top, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: Malaysia-KualaLumpur, server: acae786.ayxj.top, port: 443, type: vless, uuid: 7b8d8401-1607-31cd-945b-f45146b69337, tls: true, tfo: false, flow: xtls-rprx-vision, servername: acae786.ayxj.top, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: Malaysia-KualaLumpur_YD222Mbps, server: 7d85472.ayxj.top, port: 443, type: vless, uuid: 7b8d8401-1607-31cd-945b-f45146b69337, tls: true, tfo: false, flow: xtls-rprx-vision, servername: 7d85472.ayxj.top, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: Philippines-MetroManila, server: c8b7827.ayxj.top, port: 443, type: vless, uuid: 7b8d8401-1607-31cd-945b-f45146b69337, tls: true, tfo: false, flow: xtls-rprx-vision, servername: c8b7827.ayxj.top, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: Philippines-MetroManila 2, server: 6da8828.ayxj.top, port: 443, type: vless, uuid: 7b8d8401-1607-31cd-945b-f45146b69337, tls: true, tfo: false, flow: xtls-rprx-vision, servername: 6da8828.ayxj.top, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: Japan-Tokyo 2, server: cb14820.ayxj.top, port: 443, type: vless, uuid: 7b8d8401-1607-31cd-945b-f45146b69337, tls: true, tfo: false, flow: xtls-rprx-vision, servername: cb14820.ayxj.top, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: Singapore-NorthWest 2, server: 5e70816.ayxj.top, port: 443, type: vless, uuid: 7b8d8401-1607-31cd-945b-f45146b69337, tls: true, tfo: false, flow: xtls-rprx-vision, servername: 5e70816.ayxj.top, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: HongKong-Kowloon_DX219Mbps, server: 8194811.ayxj.top, port: 443, type: vless, uuid: 7b8d8401-1607-31cd-945b-f45146b69337, tls: true, tfo: false, flow: xtls-rprx-vision, servername: 8194811.ayxj.top, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: HongKong-Kowloon, server: c08d814.ayxj.top, port: 443, type: vless, uuid: 7b8d8401-1607-31cd-945b-f45146b69337, tls: true, tfo: false, flow: xtls-rprx-vision, servername: c08d814.ayxj.top, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: UnitedStates-Florida 3, server: ipv67420331.okxyz.xyz, port: 443, type: vless, uuid: 7b8d8401-1607-31cd-945b-f45146b69337, tls: true, tfo: false, flow: xtls-rprx-vision, servername: ipv67420331.okxyz.xyz, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: UnitedStates-Florida 4, server: 26ff225.okxyz.xyz, port: 443, type: vless, uuid: 7b8d8401-1607-31cd-945b-f45146b69337, tls: true, tfo: false, flow: xtls-rprx-vision, servername: 26ff225.okxyz.xyz, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: 电信193M_Romania-București 2, server: 9e46673.oktizi.xyz, port: 443, type: vless, uuid: 7b8d8401-1607-31cd-945b-f45146b69337, tls: true, tfo: false, servername: 9e46673.oktizi.xyz, network: grpc, grpc-opts: {grpc-mode: gun, grpc-service-name: ssp}, udp: true}
+  - {name: TheNetherlands-NorthHolland 3, server: 0b85707.okxyznode.top, port: 443, type: vless, uuid: 7b8d8401-1607-31cd-945b-f45146b69337, tls: true, tfo: false, servername: 0b85707.okxyznode.top, network: grpc, grpc-opts: {grpc-mode: gun, grpc-service-name: ssp}, udp: true}
+  - {name: TheNetherlands-Flevoland_YD154Mbps, server: 502d326.oktizi.xyz, port: 443, type: vless, uuid: 7b8d8401-1607-31cd-945b-f45146b69337, tls: true, tfo: false, servername: 502d326.oktizi.xyz, network: grpc, grpc-opts: {grpc-mode: gun, grpc-service-name: f18cb28f}, udp: true}
+  - {name: TheNetherlands-Flevoland 3, server: 87a6677.oktizi.xyz, port: 443, type: vless, uuid: 7b8d8401-1607-31cd-945b-f45146b69337, tls: true, tfo: false, servername: 87a6677.oktizi.xyz, network: grpc, grpc-opts: {grpc-mode: gun, grpc-service-name: f18cb28f}, udp: true}
+  - {name: UnitedKingdom-England 3, server: da6a642.oktizi.xyz, port: 443, type: vless, uuid: 7b8d8401-1607-31cd-945b-f45146b69337, tls: true, tfo: false, servername: da6a642.oktizi.xyz, network: grpc, grpc-opts: {grpc-mode: gun, grpc-service-name: ssp}, udp: true}
+  - {name: Germany-Hesse 2, server: 1a8b860.okxyznode.top, port: 443, type: vless, uuid: 7b8d8401-1607-31cd-945b-f45146b69337, tls: true, tfo: false, servername: 1a8b860.okxyznode.top, network: grpc, grpc-opts: {grpc-mode: gun, grpc-service-name: ssp}, udp: true}
+  - {name: UnitedStates-Illinois, server: 7c31392.okxyzback.xyz, port: 443, type: vless, uuid: 7b8d8401-1607-31cd-945b-f45146b69337, tls: true, tfo: false, servername: 7c31392.okxyzback.xyz, network: grpc, grpc-opts: {grpc-mode: gun, grpc-service-name: ssp}, udp: true}
+  - {name: UnitedStates-Virginia 3, server: 1843704.okxyznode.top, port: 443, type: vless, uuid: 7b8d8401-1607-31cd-945b-f45146b69337, tls: true, tfo: false, servername: 1843704.okxyznode.top, network: grpc, grpc-opts: {grpc-mode: gun, grpc-service-name: ssp}, udp: true}
+  - {name: UnitedStates-Illinois 2, server: eb49719.okxyz.xyz, port: 443, type: vless, uuid: 7b8d8401-1607-31cd-945b-f45146b69337, tls: true, tfo: false, flow: xtls-rprx-vision, servername: eb49719.okxyz.xyz, client-fingerprint: chrome, network: tcp, udp: true}
   - {name: 1Gbps-10TB_UnitedStates-NewYork 2, server: bced845.okxyzback.xyz, port: 443, type: vless, uuid: 7b8d8401-1607-31cd-945b-f45146b69337, tls: true, tfo: false, servername: bced845.okxyzback.xyz, network: grpc, grpc-opts: {grpc-mode: gun, grpc-service-name: ssp}, udp: true}
   - {name: 1Gbps-10TB_UnitedStates-NewYork 3, server: acd4847.okxyzback.xyz, port: 443, type: vless, uuid: 7b8d8401-1607-31cd-945b-f45146b69337, tls: true, tfo: false, servername: acd4847.okxyzback.xyz, network: grpc, grpc-opts: {grpc-mode: gun, grpc-service-name: ssp}, udp: true}
-  - {name: 1G_UnitedStates-NewYork 4, server: 2097842.okxyzback.xyz, port: 443, type: vless, uuid: 7b8d8401-1607-31cd-945b-f45146b69337, tls: true, tfo: false, servername: 2097842.okxyzback.xyz, network: grpc, grpc-opts: {grpc-mode: gun, grpc-service-name: ssp}, udp: true}
-  - {name: TheNetherlands-Flevoland_YD154Mbps, server: 6000326.oktizi.xyz, port: 443, type: vless, uuid: 7b8d8401-1607-31cd-945b-f45146b69337, tls: true, tfo: false, servername: 6000326.oktizi.xyz, network: grpc, grpc-opts: {grpc-mode: gun, grpc-service-name: ssp}, udp: true}
-  - {name: TheNetherlands-Flevoland 3, server: d5d3677.oktizi.xyz, port: 443, type: vless, uuid: 7b8d8401-1607-31cd-945b-f45146b69337, tls: true, tfo: false, servername: d5d3677.oktizi.xyz, network: grpc, grpc-opts: {grpc-mode: gun, grpc-service-name: ssp}, udp: true}
-  - {name: UnitedKingdom-England 3, server: da6a642.oktizi.xyz, port: 443, type: vless, uuid: 7b8d8401-1607-31cd-945b-f45146b69337, tls: true, tfo: false, servername: da6a642.oktizi.xyz, network: grpc, grpc-opts: {grpc-mode: gun, grpc-service-name: ssp}, udp: true}
-  - {name: TheNetherlands-NorthHolland 3, server: 0b85707.okxyznode.top, port: 443, type: vless, uuid: 7b8d8401-1607-31cd-945b-f45146b69337, tls: true, tfo: false, servername: 0b85707.okxyznode.top, network: grpc, grpc-opts: {grpc-mode: gun, grpc-service-name: ssp}, udp: true}
-  - {name: UnitedStates-Illinois, server: 7c31392.okxyzback.xyz, port: 443, type: vless, uuid: 7b8d8401-1607-31cd-945b-f45146b69337, tls: true, tfo: false, servername: 7c31392.okxyzback.xyz, network: grpc, grpc-opts: {grpc-mode: gun, grpc-service-name: ssp}, udp: true}
-  - {name: UnitedStates-Virginia_DX261Mbps, server: cabc352.okxyznode.top, port: 443, type: vless, uuid: 7b8d8401-1607-31cd-945b-f45146b69337, tls: true, tfo: false, servername: cabc352.okxyznode.top, network: grpc, grpc-opts: {grpc-mode: gun, grpc-service-name: ssp}, udp: true}
-  - {name: UnitedStates-Virginia 3, server: 6769704.okxyznode.top, port: 443, type: vless, uuid: 7b8d8401-1607-31cd-945b-f45146b69337, tls: true, tfo: false, servername: 6769704.okxyznode.top, network: grpc, grpc-opts: {grpc-mode: gun, grpc-service-name: ssp}, udp: true}
-  - {name: Germany-Hesse 2, server: 1a8b860.okxyznode.top, port: 443, type: vless, uuid: 7b8d8401-1607-31cd-945b-f45146b69337, tls: true, tfo: false, servername: 1a8b860.okxyznode.top, network: grpc, grpc-opts: {grpc-mode: gun, grpc-service-name: ssp}, udp: true}
-  - {name: UnitedStates-Illinois 2, server: 5a03719.okxyz.xyz, port: 443, type: vless, uuid: 7b8d8401-1607-31cd-945b-f45146b69337, tls: true, tfo: false, flow: xtls-rprx-vision, servername: 5a03719.okxyz.xyz, client-fingerprint: chrome, network: tcp, udp: true}
   - {name: TheNetherlands-Flevoland 4, server: 5bac228.okxyz.xyz, port: 443, type: vless, uuid: 7b8d8401-1607-31cd-945b-f45146b69337, tls: true, tfo: false, servername: 5bac228.okxyz.xyz, network: grpc, grpc-opts: {grpc-mode: gun, grpc-service-name: ssp}, udp: true}
+  - {name: UnitedStates-NewYork, server: 2e8c842.oktizi.xyz, port: 443, type: vless, uuid: 7b8d8401-1607-31cd-945b-f45146b69337, tls: true, tfo: false, servername: 2e8c842.oktizi.xyz, network: grpc, grpc-opts: {grpc-mode: gun, grpc-service-name: cad15a14}, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
@@ -80,146 +84,146 @@ proxy-groups:
       - ♻️ 自动选择
       - 🎯 全球直连
       - 用户3200102126@zju.edu.cn
-      - UnitedStates-Florida
-      - TheNetherlands-Flevoland_DX580Mbps
-      - UnitedKingdom-England_YD313Mbps
+      - Philippines-MetroManila_DX226Mbps
+      - HongKong-Kowloon
+      - Romania-București_DX72Mbps
       - TheNetherlands-NorthHolland
-      - UnitedStates-Virginia
+      - TheNetherlands-Flevoland_LT541Mbps
+      - UnitedKingdom-England_YD313Mbps
       - Germany-Hesse
+      - UnitedStates-Virginia_YD779Mbps
+      - UnitedStates-Illinois_DX83Mbps
+      - UnitedStates-Illinois_LT221Mbps
       - TheNetherlands-Flevoland
+      - Romania-București_YD77Mbps
       - Estonia-Harjumaa
-      - Indonesia-Jakarta
-      - Japan-Tokyo_DX212Mbps
-      - Singapore-NorthWest
-      - 1G_UnitedStates-NewYork
       - TheNetherlands-NorthHolland 2
-      - UnitedStates-Illinois_YD442Mbps
+      - TheNetherlands-Flevoland_DX580Mbps
+      - UnitedStates-Virginia
       - TheNetherlands-Flevoland_YD779Mbps
-      - Estonia-Harjumaa_DX1002Mbps
-      - Thailand-Bangkok
+      - Malaysia-KualaLumpur_YD231Mbps
+      - Malaysia-KualaLumpur_DX236Mbps
+      - Singapore-NorthWest_YD214Mbps
       - UnitedStates-Florida_DX132Mbps
+      - Romania-București
+      - Estonia-Harjumaa_DX1002Mbps
       - UnitedKingdom-England_DX47Mbps
       - UnitedKingdom-England
-      - Indonesia-Jakarta_YD156Mbps
-      - Thailand-Bangkok_YD63Mbps
-      - 1Gbps-10TB_UnitedStates-NewYork
-      - 1G_UnitedStates-NewYork 2
+      - UnitedStates-Illinois_YD442Mbps
+      - Malaysia-KualaLumpur_LT132Mbps
       - UnitedKingdom-England 2
-      - UnitedStates-Virginia 2
-      - UnitedStates-Illinois_LT221Mbps
+      - UnitedStates-Virginia_LT1038Mbps
+      - 1Gbps-10TB_UnitedStates-NewYork
       - TheNetherlands-Flevoland_DX653Mbps
-      - Philippines-MetroManila_DX214Mbps
-      - Japan-Tokyo
-      - UnitedStates-Florida 2
-      - 电信193M_Romania-București
-      - 1G_UnitedStates-NewYork 3
-      - TheNetherlands-Flevoland_LT541Mbps
+      - HongKong-Kowloon 2
+      - Japan-Tokyo_YD200Mbps
+      - UnitedStates-Florida
+      - Germany-Hesse_YD570Mbps
       - UnitedStates-Illinois_YD454Mbps
       - UnitedStates-Illinois_LT419Mbps
-      - Germany-Hesse_YD570Mbps
+      - UnitedStates-Virginia 2
       - TheNetherlands-Flevoland_LT552Mbps
       - TheNetherlands-Flevoland 2
+      - UnitedStates-NewYork_LT444Mbps
+      - Indonesia-Jakarta
+      - Indonesia-Jakarta_LT183Mbps
+      - Thailand-Bangkok
+      - Malaysia-KualaLumpur
+      - Philippines-MetroManila
+      - HongKong-Kowloon 3
+      - Japan-Tokyo
+      - Singapore-NorthWest
+      - Singapore-NorthWest_LT214Mbps
+      - UnitedStates-Florida 2
+      - UnitedStates-Florida 3
+      - Romania-București 2
       - Estonia-Harjumaa_LT76Mbps
       - Estonia-Harjumaa 2
-      - Indonesia-Jakarta 2
-      - Thailand-Bangkok 2
-      - Malaysia-KualaLumpur
-      - Malaysia-KualaLumpur_YD222Mbps
-      - Philippines-MetroManila
-      - Philippines-MetroManila 2
-      - Japan-Tokyo 2
-      - Singapore-NorthWest 2
-      - HongKong-Kowloon_DX219Mbps
-      - HongKong-Kowloon
-      - UnitedStates-Florida 3
-      - UnitedStates-Florida 4
-      - 电信193M_Romania-București 2
-      - 1Gbps-10TB_UnitedStates-NewYork 2
-      - 1Gbps-10TB_UnitedStates-NewYork 3
-      - 1G_UnitedStates-NewYork 4
+      - TheNetherlands-NorthHolland 3
       - TheNetherlands-Flevoland_YD154Mbps
       - TheNetherlands-Flevoland 3
       - UnitedKingdom-England 3
-      - TheNetherlands-NorthHolland 3
-      - UnitedStates-Illinois
-      - UnitedStates-Virginia_DX261Mbps
-      - UnitedStates-Virginia 3
       - Germany-Hesse 2
+      - UnitedStates-Illinois
+      - UnitedStates-Virginia 3
       - UnitedStates-Illinois 2
+      - 1Gbps-10TB_UnitedStates-NewYork 2
+      - 1Gbps-10TB_UnitedStates-NewYork 3
       - TheNetherlands-Flevoland 4
+      - UnitedStates-NewYork
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
       - 用户3200102126@zju.edu.cn
-      - UnitedStates-Florida
-      - TheNetherlands-Flevoland_DX580Mbps
-      - UnitedKingdom-England_YD313Mbps
+      - Philippines-MetroManila_DX226Mbps
+      - HongKong-Kowloon
+      - Romania-București_DX72Mbps
       - TheNetherlands-NorthHolland
-      - UnitedStates-Virginia
+      - TheNetherlands-Flevoland_LT541Mbps
+      - UnitedKingdom-England_YD313Mbps
       - Germany-Hesse
+      - UnitedStates-Virginia_YD779Mbps
+      - UnitedStates-Illinois_DX83Mbps
+      - UnitedStates-Illinois_LT221Mbps
       - TheNetherlands-Flevoland
+      - Romania-București_YD77Mbps
       - Estonia-Harjumaa
-      - Indonesia-Jakarta
-      - Japan-Tokyo_DX212Mbps
-      - Singapore-NorthWest
-      - 1G_UnitedStates-NewYork
       - TheNetherlands-NorthHolland 2
-      - UnitedStates-Illinois_YD442Mbps
+      - TheNetherlands-Flevoland_DX580Mbps
+      - UnitedStates-Virginia
       - TheNetherlands-Flevoland_YD779Mbps
-      - Estonia-Harjumaa_DX1002Mbps
-      - Thailand-Bangkok
+      - Malaysia-KualaLumpur_YD231Mbps
+      - Malaysia-KualaLumpur_DX236Mbps
+      - Singapore-NorthWest_YD214Mbps
       - UnitedStates-Florida_DX132Mbps
+      - Romania-București
+      - Estonia-Harjumaa_DX1002Mbps
       - UnitedKingdom-England_DX47Mbps
       - UnitedKingdom-England
-      - Indonesia-Jakarta_YD156Mbps
-      - Thailand-Bangkok_YD63Mbps
-      - 1Gbps-10TB_UnitedStates-NewYork
-      - 1G_UnitedStates-NewYork 2
+      - UnitedStates-Illinois_YD442Mbps
+      - Malaysia-KualaLumpur_LT132Mbps
       - UnitedKingdom-England 2
-      - UnitedStates-Virginia 2
-      - UnitedStates-Illinois_LT221Mbps
+      - UnitedStates-Virginia_LT1038Mbps
+      - 1Gbps-10TB_UnitedStates-NewYork
       - TheNetherlands-Flevoland_DX653Mbps
-      - Philippines-MetroManila_DX214Mbps
-      - Japan-Tokyo
-      - UnitedStates-Florida 2
-      - 电信193M_Romania-București
-      - 1G_UnitedStates-NewYork 3
-      - TheNetherlands-Flevoland_LT541Mbps
+      - HongKong-Kowloon 2
+      - Japan-Tokyo_YD200Mbps
+      - UnitedStates-Florida
+      - Germany-Hesse_YD570Mbps
       - UnitedStates-Illinois_YD454Mbps
       - UnitedStates-Illinois_LT419Mbps
-      - Germany-Hesse_YD570Mbps
+      - UnitedStates-Virginia 2
       - TheNetherlands-Flevoland_LT552Mbps
       - TheNetherlands-Flevoland 2
+      - UnitedStates-NewYork_LT444Mbps
+      - Indonesia-Jakarta
+      - Indonesia-Jakarta_LT183Mbps
+      - Thailand-Bangkok
+      - Malaysia-KualaLumpur
+      - Philippines-MetroManila
+      - HongKong-Kowloon 3
+      - Japan-Tokyo
+      - Singapore-NorthWest
+      - Singapore-NorthWest_LT214Mbps
+      - UnitedStates-Florida 2
+      - UnitedStates-Florida 3
+      - Romania-București 2
       - Estonia-Harjumaa_LT76Mbps
       - Estonia-Harjumaa 2
-      - Indonesia-Jakarta 2
-      - Thailand-Bangkok 2
-      - Malaysia-KualaLumpur
-      - Malaysia-KualaLumpur_YD222Mbps
-      - Philippines-MetroManila
-      - Philippines-MetroManila 2
-      - Japan-Tokyo 2
-      - Singapore-NorthWest 2
-      - HongKong-Kowloon_DX219Mbps
-      - HongKong-Kowloon
-      - UnitedStates-Florida 3
-      - UnitedStates-Florida 4
-      - 电信193M_Romania-București 2
-      - 1Gbps-10TB_UnitedStates-NewYork 2
-      - 1Gbps-10TB_UnitedStates-NewYork 3
-      - 1G_UnitedStates-NewYork 4
+      - TheNetherlands-NorthHolland 3
       - TheNetherlands-Flevoland_YD154Mbps
       - TheNetherlands-Flevoland 3
       - UnitedKingdom-England 3
-      - TheNetherlands-NorthHolland 3
-      - UnitedStates-Illinois
-      - UnitedStates-Virginia_DX261Mbps
-      - UnitedStates-Virginia 3
       - Germany-Hesse 2
+      - UnitedStates-Illinois
+      - UnitedStates-Virginia 3
       - UnitedStates-Illinois 2
+      - 1Gbps-10TB_UnitedStates-NewYork 2
+      - 1Gbps-10TB_UnitedStates-NewYork 3
       - TheNetherlands-Flevoland 4
+      - UnitedStates-NewYork
   - name: 🎥 NETFLIX
     type: select
     proxies:
@@ -227,73 +231,73 @@ proxy-groups:
       - ♻️ 自动选择
       - 🎯 全球直连
       - 用户3200102126@zju.edu.cn
-      - UnitedStates-Florida
-      - TheNetherlands-Flevoland_DX580Mbps
-      - UnitedKingdom-England_YD313Mbps
+      - Philippines-MetroManila_DX226Mbps
+      - HongKong-Kowloon
+      - Romania-București_DX72Mbps
       - TheNetherlands-NorthHolland
-      - UnitedStates-Virginia
+      - TheNetherlands-Flevoland_LT541Mbps
+      - UnitedKingdom-England_YD313Mbps
       - Germany-Hesse
+      - UnitedStates-Virginia_YD779Mbps
+      - UnitedStates-Illinois_DX83Mbps
+      - UnitedStates-Illinois_LT221Mbps
       - TheNetherlands-Flevoland
+      - Romania-București_YD77Mbps
       - Estonia-Harjumaa
-      - Indonesia-Jakarta
-      - Japan-Tokyo_DX212Mbps
-      - Singapore-NorthWest
-      - 1G_UnitedStates-NewYork
       - TheNetherlands-NorthHolland 2
-      - UnitedStates-Illinois_YD442Mbps
+      - TheNetherlands-Flevoland_DX580Mbps
+      - UnitedStates-Virginia
       - TheNetherlands-Flevoland_YD779Mbps
-      - Estonia-Harjumaa_DX1002Mbps
-      - Thailand-Bangkok
+      - Malaysia-KualaLumpur_YD231Mbps
+      - Malaysia-KualaLumpur_DX236Mbps
+      - Singapore-NorthWest_YD214Mbps
       - UnitedStates-Florida_DX132Mbps
+      - Romania-București
+      - Estonia-Harjumaa_DX1002Mbps
       - UnitedKingdom-England_DX47Mbps
       - UnitedKingdom-England
-      - Indonesia-Jakarta_YD156Mbps
-      - Thailand-Bangkok_YD63Mbps
-      - 1Gbps-10TB_UnitedStates-NewYork
-      - 1G_UnitedStates-NewYork 2
+      - UnitedStates-Illinois_YD442Mbps
+      - Malaysia-KualaLumpur_LT132Mbps
       - UnitedKingdom-England 2
-      - UnitedStates-Virginia 2
-      - UnitedStates-Illinois_LT221Mbps
+      - UnitedStates-Virginia_LT1038Mbps
+      - 1Gbps-10TB_UnitedStates-NewYork
       - TheNetherlands-Flevoland_DX653Mbps
-      - Philippines-MetroManila_DX214Mbps
-      - Japan-Tokyo
-      - UnitedStates-Florida 2
-      - 电信193M_Romania-București
-      - 1G_UnitedStates-NewYork 3
-      - TheNetherlands-Flevoland_LT541Mbps
+      - HongKong-Kowloon 2
+      - Japan-Tokyo_YD200Mbps
+      - UnitedStates-Florida
+      - Germany-Hesse_YD570Mbps
       - UnitedStates-Illinois_YD454Mbps
       - UnitedStates-Illinois_LT419Mbps
-      - Germany-Hesse_YD570Mbps
+      - UnitedStates-Virginia 2
       - TheNetherlands-Flevoland_LT552Mbps
       - TheNetherlands-Flevoland 2
+      - UnitedStates-NewYork_LT444Mbps
+      - Indonesia-Jakarta
+      - Indonesia-Jakarta_LT183Mbps
+      - Thailand-Bangkok
+      - Malaysia-KualaLumpur
+      - Philippines-MetroManila
+      - HongKong-Kowloon 3
+      - Japan-Tokyo
+      - Singapore-NorthWest
+      - Singapore-NorthWest_LT214Mbps
+      - UnitedStates-Florida 2
+      - UnitedStates-Florida 3
+      - Romania-București 2
       - Estonia-Harjumaa_LT76Mbps
       - Estonia-Harjumaa 2
-      - Indonesia-Jakarta 2
-      - Thailand-Bangkok 2
-      - Malaysia-KualaLumpur
-      - Malaysia-KualaLumpur_YD222Mbps
-      - Philippines-MetroManila
-      - Philippines-MetroManila 2
-      - Japan-Tokyo 2
-      - Singapore-NorthWest 2
-      - HongKong-Kowloon_DX219Mbps
-      - HongKong-Kowloon
-      - UnitedStates-Florida 3
-      - UnitedStates-Florida 4
-      - 电信193M_Romania-București 2
-      - 1Gbps-10TB_UnitedStates-NewYork 2
-      - 1Gbps-10TB_UnitedStates-NewYork 3
-      - 1G_UnitedStates-NewYork 4
+      - TheNetherlands-NorthHolland 3
       - TheNetherlands-Flevoland_YD154Mbps
       - TheNetherlands-Flevoland 3
       - UnitedKingdom-England 3
-      - TheNetherlands-NorthHolland 3
-      - UnitedStates-Illinois
-      - UnitedStates-Virginia_DX261Mbps
-      - UnitedStates-Virginia 3
       - Germany-Hesse 2
+      - UnitedStates-Illinois
+      - UnitedStates-Virginia 3
       - UnitedStates-Illinois 2
+      - 1Gbps-10TB_UnitedStates-NewYork 2
+      - 1Gbps-10TB_UnitedStates-NewYork 3
       - TheNetherlands-Flevoland 4
+      - UnitedStates-NewYork
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -313,73 +317,73 @@ proxy-groups:
       - ♻️ 自动选择
       - 🎯 全球直连
       - 用户3200102126@zju.edu.cn
-      - UnitedStates-Florida
-      - TheNetherlands-Flevoland_DX580Mbps
-      - UnitedKingdom-England_YD313Mbps
+      - Philippines-MetroManila_DX226Mbps
+      - HongKong-Kowloon
+      - Romania-București_DX72Mbps
       - TheNetherlands-NorthHolland
-      - UnitedStates-Virginia
+      - TheNetherlands-Flevoland_LT541Mbps
+      - UnitedKingdom-England_YD313Mbps
       - Germany-Hesse
+      - UnitedStates-Virginia_YD779Mbps
+      - UnitedStates-Illinois_DX83Mbps
+      - UnitedStates-Illinois_LT221Mbps
       - TheNetherlands-Flevoland
+      - Romania-București_YD77Mbps
       - Estonia-Harjumaa
-      - Indonesia-Jakarta
-      - Japan-Tokyo_DX212Mbps
-      - Singapore-NorthWest
-      - 1G_UnitedStates-NewYork
       - TheNetherlands-NorthHolland 2
-      - UnitedStates-Illinois_YD442Mbps
+      - TheNetherlands-Flevoland_DX580Mbps
+      - UnitedStates-Virginia
       - TheNetherlands-Flevoland_YD779Mbps
-      - Estonia-Harjumaa_DX1002Mbps
-      - Thailand-Bangkok
+      - Malaysia-KualaLumpur_YD231Mbps
+      - Malaysia-KualaLumpur_DX236Mbps
+      - Singapore-NorthWest_YD214Mbps
       - UnitedStates-Florida_DX132Mbps
+      - Romania-București
+      - Estonia-Harjumaa_DX1002Mbps
       - UnitedKingdom-England_DX47Mbps
       - UnitedKingdom-England
-      - Indonesia-Jakarta_YD156Mbps
-      - Thailand-Bangkok_YD63Mbps
-      - 1Gbps-10TB_UnitedStates-NewYork
-      - 1G_UnitedStates-NewYork 2
+      - UnitedStates-Illinois_YD442Mbps
+      - Malaysia-KualaLumpur_LT132Mbps
       - UnitedKingdom-England 2
-      - UnitedStates-Virginia 2
-      - UnitedStates-Illinois_LT221Mbps
+      - UnitedStates-Virginia_LT1038Mbps
+      - 1Gbps-10TB_UnitedStates-NewYork
       - TheNetherlands-Flevoland_DX653Mbps
-      - Philippines-MetroManila_DX214Mbps
-      - Japan-Tokyo
-      - UnitedStates-Florida 2
-      - 电信193M_Romania-București
-      - 1G_UnitedStates-NewYork 3
-      - TheNetherlands-Flevoland_LT541Mbps
+      - HongKong-Kowloon 2
+      - Japan-Tokyo_YD200Mbps
+      - UnitedStates-Florida
+      - Germany-Hesse_YD570Mbps
       - UnitedStates-Illinois_YD454Mbps
       - UnitedStates-Illinois_LT419Mbps
-      - Germany-Hesse_YD570Mbps
+      - UnitedStates-Virginia 2
       - TheNetherlands-Flevoland_LT552Mbps
       - TheNetherlands-Flevoland 2
+      - UnitedStates-NewYork_LT444Mbps
+      - Indonesia-Jakarta
+      - Indonesia-Jakarta_LT183Mbps
+      - Thailand-Bangkok
+      - Malaysia-KualaLumpur
+      - Philippines-MetroManila
+      - HongKong-Kowloon 3
+      - Japan-Tokyo
+      - Singapore-NorthWest
+      - Singapore-NorthWest_LT214Mbps
+      - UnitedStates-Florida 2
+      - UnitedStates-Florida 3
+      - Romania-București 2
       - Estonia-Harjumaa_LT76Mbps
       - Estonia-Harjumaa 2
-      - Indonesia-Jakarta 2
-      - Thailand-Bangkok 2
-      - Malaysia-KualaLumpur
-      - Malaysia-KualaLumpur_YD222Mbps
-      - Philippines-MetroManila
-      - Philippines-MetroManila 2
-      - Japan-Tokyo 2
-      - Singapore-NorthWest 2
-      - HongKong-Kowloon_DX219Mbps
-      - HongKong-Kowloon
-      - UnitedStates-Florida 3
-      - UnitedStates-Florida 4
-      - 电信193M_Romania-București 2
-      - 1Gbps-10TB_UnitedStates-NewYork 2
-      - 1Gbps-10TB_UnitedStates-NewYork 3
-      - 1G_UnitedStates-NewYork 4
+      - TheNetherlands-NorthHolland 3
       - TheNetherlands-Flevoland_YD154Mbps
       - TheNetherlands-Flevoland 3
       - UnitedKingdom-England 3
-      - TheNetherlands-NorthHolland 3
-      - UnitedStates-Illinois
-      - UnitedStates-Virginia_DX261Mbps
-      - UnitedStates-Virginia 3
       - Germany-Hesse 2
+      - UnitedStates-Illinois
+      - UnitedStates-Virginia 3
       - UnitedStates-Illinois 2
+      - 1Gbps-10TB_UnitedStates-NewYork 2
+      - 1Gbps-10TB_UnitedStates-NewYork 3
       - TheNetherlands-Flevoland 4
+      - UnitedStates-NewYork
   - name: 🌏 国内媒体
     type: select
     proxies:
@@ -391,146 +395,146 @@ proxy-groups:
       - 🎯 全球直连
       - 🔰 节点选择
       - 用户3200102126@zju.edu.cn
-      - UnitedStates-Florida
-      - TheNetherlands-Flevoland_DX580Mbps
-      - UnitedKingdom-England_YD313Mbps
+      - Philippines-MetroManila_DX226Mbps
+      - HongKong-Kowloon
+      - Romania-București_DX72Mbps
       - TheNetherlands-NorthHolland
-      - UnitedStates-Virginia
+      - TheNetherlands-Flevoland_LT541Mbps
+      - UnitedKingdom-England_YD313Mbps
       - Germany-Hesse
+      - UnitedStates-Virginia_YD779Mbps
+      - UnitedStates-Illinois_DX83Mbps
+      - UnitedStates-Illinois_LT221Mbps
       - TheNetherlands-Flevoland
+      - Romania-București_YD77Mbps
       - Estonia-Harjumaa
-      - Indonesia-Jakarta
-      - Japan-Tokyo_DX212Mbps
-      - Singapore-NorthWest
-      - 1G_UnitedStates-NewYork
       - TheNetherlands-NorthHolland 2
-      - UnitedStates-Illinois_YD442Mbps
+      - TheNetherlands-Flevoland_DX580Mbps
+      - UnitedStates-Virginia
       - TheNetherlands-Flevoland_YD779Mbps
-      - Estonia-Harjumaa_DX1002Mbps
-      - Thailand-Bangkok
+      - Malaysia-KualaLumpur_YD231Mbps
+      - Malaysia-KualaLumpur_DX236Mbps
+      - Singapore-NorthWest_YD214Mbps
       - UnitedStates-Florida_DX132Mbps
+      - Romania-București
+      - Estonia-Harjumaa_DX1002Mbps
       - UnitedKingdom-England_DX47Mbps
       - UnitedKingdom-England
-      - Indonesia-Jakarta_YD156Mbps
-      - Thailand-Bangkok_YD63Mbps
-      - 1Gbps-10TB_UnitedStates-NewYork
-      - 1G_UnitedStates-NewYork 2
+      - UnitedStates-Illinois_YD442Mbps
+      - Malaysia-KualaLumpur_LT132Mbps
       - UnitedKingdom-England 2
-      - UnitedStates-Virginia 2
-      - UnitedStates-Illinois_LT221Mbps
+      - UnitedStates-Virginia_LT1038Mbps
+      - 1Gbps-10TB_UnitedStates-NewYork
       - TheNetherlands-Flevoland_DX653Mbps
-      - Philippines-MetroManila_DX214Mbps
-      - Japan-Tokyo
-      - UnitedStates-Florida 2
-      - 电信193M_Romania-București
-      - 1G_UnitedStates-NewYork 3
-      - TheNetherlands-Flevoland_LT541Mbps
+      - HongKong-Kowloon 2
+      - Japan-Tokyo_YD200Mbps
+      - UnitedStates-Florida
+      - Germany-Hesse_YD570Mbps
       - UnitedStates-Illinois_YD454Mbps
       - UnitedStates-Illinois_LT419Mbps
-      - Germany-Hesse_YD570Mbps
+      - UnitedStates-Virginia 2
       - TheNetherlands-Flevoland_LT552Mbps
       - TheNetherlands-Flevoland 2
+      - UnitedStates-NewYork_LT444Mbps
+      - Indonesia-Jakarta
+      - Indonesia-Jakarta_LT183Mbps
+      - Thailand-Bangkok
+      - Malaysia-KualaLumpur
+      - Philippines-MetroManila
+      - HongKong-Kowloon 3
+      - Japan-Tokyo
+      - Singapore-NorthWest
+      - Singapore-NorthWest_LT214Mbps
+      - UnitedStates-Florida 2
+      - UnitedStates-Florida 3
+      - Romania-București 2
       - Estonia-Harjumaa_LT76Mbps
       - Estonia-Harjumaa 2
-      - Indonesia-Jakarta 2
-      - Thailand-Bangkok 2
-      - Malaysia-KualaLumpur
-      - Malaysia-KualaLumpur_YD222Mbps
-      - Philippines-MetroManila
-      - Philippines-MetroManila 2
-      - Japan-Tokyo 2
-      - Singapore-NorthWest 2
-      - HongKong-Kowloon_DX219Mbps
-      - HongKong-Kowloon
-      - UnitedStates-Florida 3
-      - UnitedStates-Florida 4
-      - 电信193M_Romania-București 2
-      - 1Gbps-10TB_UnitedStates-NewYork 2
-      - 1Gbps-10TB_UnitedStates-NewYork 3
-      - 1G_UnitedStates-NewYork 4
+      - TheNetherlands-NorthHolland 3
       - TheNetherlands-Flevoland_YD154Mbps
       - TheNetherlands-Flevoland 3
       - UnitedKingdom-England 3
-      - TheNetherlands-NorthHolland 3
-      - UnitedStates-Illinois
-      - UnitedStates-Virginia_DX261Mbps
-      - UnitedStates-Virginia 3
       - Germany-Hesse 2
+      - UnitedStates-Illinois
+      - UnitedStates-Virginia 3
       - UnitedStates-Illinois 2
+      - 1Gbps-10TB_UnitedStates-NewYork 2
+      - 1Gbps-10TB_UnitedStates-NewYork 3
       - TheNetherlands-Flevoland 4
+      - UnitedStates-NewYork
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - 用户3200102126@zju.edu.cn
-      - UnitedStates-Florida
-      - TheNetherlands-Flevoland_DX580Mbps
-      - UnitedKingdom-England_YD313Mbps
+      - Philippines-MetroManila_DX226Mbps
+      - HongKong-Kowloon
+      - Romania-București_DX72Mbps
       - TheNetherlands-NorthHolland
-      - UnitedStates-Virginia
+      - TheNetherlands-Flevoland_LT541Mbps
+      - UnitedKingdom-England_YD313Mbps
       - Germany-Hesse
+      - UnitedStates-Virginia_YD779Mbps
+      - UnitedStates-Illinois_DX83Mbps
+      - UnitedStates-Illinois_LT221Mbps
       - TheNetherlands-Flevoland
+      - Romania-București_YD77Mbps
       - Estonia-Harjumaa
-      - Indonesia-Jakarta
-      - Japan-Tokyo_DX212Mbps
-      - Singapore-NorthWest
-      - 1G_UnitedStates-NewYork
       - TheNetherlands-NorthHolland 2
-      - UnitedStates-Illinois_YD442Mbps
+      - TheNetherlands-Flevoland_DX580Mbps
+      - UnitedStates-Virginia
       - TheNetherlands-Flevoland_YD779Mbps
-      - Estonia-Harjumaa_DX1002Mbps
-      - Thailand-Bangkok
+      - Malaysia-KualaLumpur_YD231Mbps
+      - Malaysia-KualaLumpur_DX236Mbps
+      - Singapore-NorthWest_YD214Mbps
       - UnitedStates-Florida_DX132Mbps
+      - Romania-București
+      - Estonia-Harjumaa_DX1002Mbps
       - UnitedKingdom-England_DX47Mbps
       - UnitedKingdom-England
-      - Indonesia-Jakarta_YD156Mbps
-      - Thailand-Bangkok_YD63Mbps
-      - 1Gbps-10TB_UnitedStates-NewYork
-      - 1G_UnitedStates-NewYork 2
+      - UnitedStates-Illinois_YD442Mbps
+      - Malaysia-KualaLumpur_LT132Mbps
       - UnitedKingdom-England 2
-      - UnitedStates-Virginia 2
-      - UnitedStates-Illinois_LT221Mbps
+      - UnitedStates-Virginia_LT1038Mbps
+      - 1Gbps-10TB_UnitedStates-NewYork
       - TheNetherlands-Flevoland_DX653Mbps
-      - Philippines-MetroManila_DX214Mbps
-      - Japan-Tokyo
-      - UnitedStates-Florida 2
-      - 电信193M_Romania-București
-      - 1G_UnitedStates-NewYork 3
-      - TheNetherlands-Flevoland_LT541Mbps
+      - HongKong-Kowloon 2
+      - Japan-Tokyo_YD200Mbps
+      - UnitedStates-Florida
+      - Germany-Hesse_YD570Mbps
       - UnitedStates-Illinois_YD454Mbps
       - UnitedStates-Illinois_LT419Mbps
-      - Germany-Hesse_YD570Mbps
+      - UnitedStates-Virginia 2
       - TheNetherlands-Flevoland_LT552Mbps
       - TheNetherlands-Flevoland 2
+      - UnitedStates-NewYork_LT444Mbps
+      - Indonesia-Jakarta
+      - Indonesia-Jakarta_LT183Mbps
+      - Thailand-Bangkok
+      - Malaysia-KualaLumpur
+      - Philippines-MetroManila
+      - HongKong-Kowloon 3
+      - Japan-Tokyo
+      - Singapore-NorthWest
+      - Singapore-NorthWest_LT214Mbps
+      - UnitedStates-Florida 2
+      - UnitedStates-Florida 3
+      - Romania-București 2
       - Estonia-Harjumaa_LT76Mbps
       - Estonia-Harjumaa 2
-      - Indonesia-Jakarta 2
-      - Thailand-Bangkok 2
-      - Malaysia-KualaLumpur
-      - Malaysia-KualaLumpur_YD222Mbps
-      - Philippines-MetroManila
-      - Philippines-MetroManila 2
-      - Japan-Tokyo 2
-      - Singapore-NorthWest 2
-      - HongKong-Kowloon_DX219Mbps
-      - HongKong-Kowloon
-      - UnitedStates-Florida 3
-      - UnitedStates-Florida 4
-      - 电信193M_Romania-București 2
-      - 1Gbps-10TB_UnitedStates-NewYork 2
-      - 1Gbps-10TB_UnitedStates-NewYork 3
-      - 1G_UnitedStates-NewYork 4
+      - TheNetherlands-NorthHolland 3
       - TheNetherlands-Flevoland_YD154Mbps
       - TheNetherlands-Flevoland 3
       - UnitedKingdom-England 3
-      - TheNetherlands-NorthHolland 3
-      - UnitedStates-Illinois
-      - UnitedStates-Virginia_DX261Mbps
-      - UnitedStates-Virginia 3
       - Germany-Hesse 2
+      - UnitedStates-Illinois
+      - UnitedStates-Virginia 3
       - UnitedStates-Illinois 2
+      - 1Gbps-10TB_UnitedStates-NewYork 2
+      - 1Gbps-10TB_UnitedStates-NewYork 3
       - TheNetherlands-Flevoland 4
+      - UnitedStates-NewYork
   - name: 🍎 苹果服务
     type: select
     proxies:
@@ -538,73 +542,73 @@ proxy-groups:
       - 🎯 全球直连
       - ♻️ 自动选择
       - 用户3200102126@zju.edu.cn
-      - UnitedStates-Florida
-      - TheNetherlands-Flevoland_DX580Mbps
-      - UnitedKingdom-England_YD313Mbps
+      - Philippines-MetroManila_DX226Mbps
+      - HongKong-Kowloon
+      - Romania-București_DX72Mbps
       - TheNetherlands-NorthHolland
-      - UnitedStates-Virginia
+      - TheNetherlands-Flevoland_LT541Mbps
+      - UnitedKingdom-England_YD313Mbps
       - Germany-Hesse
+      - UnitedStates-Virginia_YD779Mbps
+      - UnitedStates-Illinois_DX83Mbps
+      - UnitedStates-Illinois_LT221Mbps
       - TheNetherlands-Flevoland
+      - Romania-București_YD77Mbps
       - Estonia-Harjumaa
-      - Indonesia-Jakarta
-      - Japan-Tokyo_DX212Mbps
-      - Singapore-NorthWest
-      - 1G_UnitedStates-NewYork
       - TheNetherlands-NorthHolland 2
-      - UnitedStates-Illinois_YD442Mbps
+      - TheNetherlands-Flevoland_DX580Mbps
+      - UnitedStates-Virginia
       - TheNetherlands-Flevoland_YD779Mbps
-      - Estonia-Harjumaa_DX1002Mbps
-      - Thailand-Bangkok
+      - Malaysia-KualaLumpur_YD231Mbps
+      - Malaysia-KualaLumpur_DX236Mbps
+      - Singapore-NorthWest_YD214Mbps
       - UnitedStates-Florida_DX132Mbps
+      - Romania-București
+      - Estonia-Harjumaa_DX1002Mbps
       - UnitedKingdom-England_DX47Mbps
       - UnitedKingdom-England
-      - Indonesia-Jakarta_YD156Mbps
-      - Thailand-Bangkok_YD63Mbps
-      - 1Gbps-10TB_UnitedStates-NewYork
-      - 1G_UnitedStates-NewYork 2
+      - UnitedStates-Illinois_YD442Mbps
+      - Malaysia-KualaLumpur_LT132Mbps
       - UnitedKingdom-England 2
-      - UnitedStates-Virginia 2
-      - UnitedStates-Illinois_LT221Mbps
+      - UnitedStates-Virginia_LT1038Mbps
+      - 1Gbps-10TB_UnitedStates-NewYork
       - TheNetherlands-Flevoland_DX653Mbps
-      - Philippines-MetroManila_DX214Mbps
-      - Japan-Tokyo
-      - UnitedStates-Florida 2
-      - 电信193M_Romania-București
-      - 1G_UnitedStates-NewYork 3
-      - TheNetherlands-Flevoland_LT541Mbps
+      - HongKong-Kowloon 2
+      - Japan-Tokyo_YD200Mbps
+      - UnitedStates-Florida
+      - Germany-Hesse_YD570Mbps
       - UnitedStates-Illinois_YD454Mbps
       - UnitedStates-Illinois_LT419Mbps
-      - Germany-Hesse_YD570Mbps
+      - UnitedStates-Virginia 2
       - TheNetherlands-Flevoland_LT552Mbps
       - TheNetherlands-Flevoland 2
+      - UnitedStates-NewYork_LT444Mbps
+      - Indonesia-Jakarta
+      - Indonesia-Jakarta_LT183Mbps
+      - Thailand-Bangkok
+      - Malaysia-KualaLumpur
+      - Philippines-MetroManila
+      - HongKong-Kowloon 3
+      - Japan-Tokyo
+      - Singapore-NorthWest
+      - Singapore-NorthWest_LT214Mbps
+      - UnitedStates-Florida 2
+      - UnitedStates-Florida 3
+      - Romania-București 2
       - Estonia-Harjumaa_LT76Mbps
       - Estonia-Harjumaa 2
-      - Indonesia-Jakarta 2
-      - Thailand-Bangkok 2
-      - Malaysia-KualaLumpur
-      - Malaysia-KualaLumpur_YD222Mbps
-      - Philippines-MetroManila
-      - Philippines-MetroManila 2
-      - Japan-Tokyo 2
-      - Singapore-NorthWest 2
-      - HongKong-Kowloon_DX219Mbps
-      - HongKong-Kowloon
-      - UnitedStates-Florida 3
-      - UnitedStates-Florida 4
-      - 电信193M_Romania-București 2
-      - 1Gbps-10TB_UnitedStates-NewYork 2
-      - 1Gbps-10TB_UnitedStates-NewYork 3
-      - 1G_UnitedStates-NewYork 4
+      - TheNetherlands-NorthHolland 3
       - TheNetherlands-Flevoland_YD154Mbps
       - TheNetherlands-Flevoland 3
       - UnitedKingdom-England 3
-      - TheNetherlands-NorthHolland 3
-      - UnitedStates-Illinois
-      - UnitedStates-Virginia_DX261Mbps
-      - UnitedStates-Virginia 3
       - Germany-Hesse 2
+      - UnitedStates-Illinois
+      - UnitedStates-Virginia 3
       - UnitedStates-Illinois 2
+      - 1Gbps-10TB_UnitedStates-NewYork 2
+      - 1Gbps-10TB_UnitedStates-NewYork 3
       - TheNetherlands-Flevoland 4
+      - UnitedStates-NewYork
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -621,73 +625,73 @@ proxy-groups:
       - 🎯 全球直连
       - ♻️ 自动选择
       - 用户3200102126@zju.edu.cn
-      - UnitedStates-Florida
-      - TheNetherlands-Flevoland_DX580Mbps
-      - UnitedKingdom-England_YD313Mbps
+      - Philippines-MetroManila_DX226Mbps
+      - HongKong-Kowloon
+      - Romania-București_DX72Mbps
       - TheNetherlands-NorthHolland
-      - UnitedStates-Virginia
+      - TheNetherlands-Flevoland_LT541Mbps
+      - UnitedKingdom-England_YD313Mbps
       - Germany-Hesse
+      - UnitedStates-Virginia_YD779Mbps
+      - UnitedStates-Illinois_DX83Mbps
+      - UnitedStates-Illinois_LT221Mbps
       - TheNetherlands-Flevoland
+      - Romania-București_YD77Mbps
       - Estonia-Harjumaa
-      - Indonesia-Jakarta
-      - Japan-Tokyo_DX212Mbps
-      - Singapore-NorthWest
-      - 1G_UnitedStates-NewYork
       - TheNetherlands-NorthHolland 2
-      - UnitedStates-Illinois_YD442Mbps
+      - TheNetherlands-Flevoland_DX580Mbps
+      - UnitedStates-Virginia
       - TheNetherlands-Flevoland_YD779Mbps
-      - Estonia-Harjumaa_DX1002Mbps
-      - Thailand-Bangkok
+      - Malaysia-KualaLumpur_YD231Mbps
+      - Malaysia-KualaLumpur_DX236Mbps
+      - Singapore-NorthWest_YD214Mbps
       - UnitedStates-Florida_DX132Mbps
+      - Romania-București
+      - Estonia-Harjumaa_DX1002Mbps
       - UnitedKingdom-England_DX47Mbps
       - UnitedKingdom-England
-      - Indonesia-Jakarta_YD156Mbps
-      - Thailand-Bangkok_YD63Mbps
-      - 1Gbps-10TB_UnitedStates-NewYork
-      - 1G_UnitedStates-NewYork 2
+      - UnitedStates-Illinois_YD442Mbps
+      - Malaysia-KualaLumpur_LT132Mbps
       - UnitedKingdom-England 2
-      - UnitedStates-Virginia 2
-      - UnitedStates-Illinois_LT221Mbps
+      - UnitedStates-Virginia_LT1038Mbps
+      - 1Gbps-10TB_UnitedStates-NewYork
       - TheNetherlands-Flevoland_DX653Mbps
-      - Philippines-MetroManila_DX214Mbps
-      - Japan-Tokyo
-      - UnitedStates-Florida 2
-      - 电信193M_Romania-București
-      - 1G_UnitedStates-NewYork 3
-      - TheNetherlands-Flevoland_LT541Mbps
+      - HongKong-Kowloon 2
+      - Japan-Tokyo_YD200Mbps
+      - UnitedStates-Florida
+      - Germany-Hesse_YD570Mbps
       - UnitedStates-Illinois_YD454Mbps
       - UnitedStates-Illinois_LT419Mbps
-      - Germany-Hesse_YD570Mbps
+      - UnitedStates-Virginia 2
       - TheNetherlands-Flevoland_LT552Mbps
       - TheNetherlands-Flevoland 2
+      - UnitedStates-NewYork_LT444Mbps
+      - Indonesia-Jakarta
+      - Indonesia-Jakarta_LT183Mbps
+      - Thailand-Bangkok
+      - Malaysia-KualaLumpur
+      - Philippines-MetroManila
+      - HongKong-Kowloon 3
+      - Japan-Tokyo
+      - Singapore-NorthWest
+      - Singapore-NorthWest_LT214Mbps
+      - UnitedStates-Florida 2
+      - UnitedStates-Florida 3
+      - Romania-București 2
       - Estonia-Harjumaa_LT76Mbps
       - Estonia-Harjumaa 2
-      - Indonesia-Jakarta 2
-      - Thailand-Bangkok 2
-      - Malaysia-KualaLumpur
-      - Malaysia-KualaLumpur_YD222Mbps
-      - Philippines-MetroManila
-      - Philippines-MetroManila 2
-      - Japan-Tokyo 2
-      - Singapore-NorthWest 2
-      - HongKong-Kowloon_DX219Mbps
-      - HongKong-Kowloon
-      - UnitedStates-Florida 3
-      - UnitedStates-Florida 4
-      - 电信193M_Romania-București 2
-      - 1Gbps-10TB_UnitedStates-NewYork 2
-      - 1Gbps-10TB_UnitedStates-NewYork 3
-      - 1G_UnitedStates-NewYork 4
+      - TheNetherlands-NorthHolland 3
       - TheNetherlands-Flevoland_YD154Mbps
       - TheNetherlands-Flevoland 3
       - UnitedKingdom-England 3
-      - TheNetherlands-NorthHolland 3
-      - UnitedStates-Illinois
-      - UnitedStates-Virginia_DX261Mbps
-      - UnitedStates-Virginia 3
       - Germany-Hesse 2
+      - UnitedStates-Illinois
+      - UnitedStates-Virginia 3
       - UnitedStates-Illinois 2
+      - 1Gbps-10TB_UnitedStates-NewYork 2
+      - 1Gbps-10TB_UnitedStates-NewYork 3
       - TheNetherlands-Flevoland 4
+      - UnitedStates-NewYork
 rules:
   - DOMAIN-SUFFIX,local,🎯 全球直连
   - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
