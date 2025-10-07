@@ -2,7 +2,7 @@
     link:
       relink: true
 
-- clean: ['~']
+- clean: ['~', '~/.config', '~/.config/nvim/init.lua']
 
 - link:
     ~/.zshrc: zshrc
@@ -14,9 +14,12 @@
     ~/.config/nvim/init.lua: 
       create: true
       path: config/nvim/init.lua
+    ~/.config/nvim/lazyvim.json: config/nvim/lazyvim.json
     ~/.config/nvim/lua: config/nvim/lua
     ~/.tmux.conf: tmux/tmux.conf
-    ~/.config/mihomo/config.yaml: config/mihomo/config.yaml
+    ~/.config/mihomo/config.yaml: 
+      create: true
+      path: config/mihomo/config.yaml
 
 - shell:
   - [git submodule update --init --recursive, Installing submodules]
