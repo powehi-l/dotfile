@@ -18,6 +18,14 @@ alias vim=nvim
 
 export EDITOR=nvim
 
+switch (uname -s)
+    case Linux
+        fish_add_path "~/.linuxbrew/bin"
+    case Darwin
+        fish_add_path /opt/homebrew/bin
+        fish_add_path /opt/homebrew/sbin
+end
+
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
 if test -f /opt/homebrew/Caskroom/miniconda/base/bin/conda
@@ -34,5 +42,4 @@ end
 # Added by `rbenv init` on 2025年 4月 2日 星期三 14时54分59秒 CST
 # status --is-interactive; and rbenv init - --no-rehash fish | source
 
-test -e {$HOME}/.iterm2_shell_integration.fish ; and source {$HOME}/.iterm2_shell_integration.fish
-
+test -e {$HOME}/.iterm2_shell_integration.fish; and source {$HOME}/.iterm2_shell_integration.fish
