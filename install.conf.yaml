@@ -8,6 +8,9 @@
     ~/.zshrc: zshrc
     ~/.zsh: zsh
     ~/.shell: shell
+    ~/.config/fish/config.fish: 
+      create: true
+      path: config/fish/config.fish
     ~/.config/nvim/init.lua: 
       create: true
       path: config/nvim/init.lua
