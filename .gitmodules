@@ -1,6 +1,3 @@
 [submodule "dotbot"]
 	path = dotbot
 	url = https://gitee.com/deandraco/dotbot
-[submodule "oh-my-zsh"]
-	path = oh-my-zsh
-	url = https://gitee.com/hejack0207/oh-my-zsh
