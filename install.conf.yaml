@@ -8,10 +8,9 @@
     ~/.zshrc: zshrc
     ~/.zsh: zsh
     ~/.shell: shell
-    # ~/.oh-my-zsh: oh-my-zsh
     ~/.config/nvim: config/nvim
     ~/.tmux.conf: tmux/tmux.conf
-    ~/.config/mihomo: config/mihomo
+    ~/.config/mihomo/config.yaml: config/mihomo/config.yaml
 
 - shell:
   - [git submodule update --init --recursive, Installing submodules]
